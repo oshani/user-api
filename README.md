@@ -1,1 +1,1 @@
-# user-api
+This API exposes a GET /users/:id endpoint that retrieves a user from MongoDB only if the user exists and is over the age of 21. It gracefully handles invalid ObjectId values by returning a 404 response without querying the database. If the user is not found or does not meet the age requirement, a 404 is also returned to ensure consistent error handling.
